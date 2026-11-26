@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window x:Class="ClapStudio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dock="using:WinUI.Dock"
+        Title="Clap Studio">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <MenuBar Grid.Row="0">
+            <MenuBarItem x:Name="ModulesMenuBarItem" Title="Modules" />
+        </MenuBar>
+        <dock:DockManager x:Name="MainDockManager" Grid.Row="1">
+            <dock:DockManager.Panel>
+                <dock:LayoutPanel Orientation="Horizontal">
+                    <dock:DocumentGroup x:Name="RootDocumentGroup" ShowWhenEmpty="True" />
+                </dock:LayoutPanel>
+            </dock:DockManager.Panel>
+        </dock:DockManager>
+    </Grid>
+</Window>

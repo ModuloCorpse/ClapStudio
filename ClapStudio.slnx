@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ClapStudio.Core/ClapStudio.Core.csproj" Id="707ef7ae-2399-44a3-b9e0-ae4cf2d2b8d8" />
+  <Project Path="ClapStudio.Interface.Bundles/ClapStudio.Interface.Bundles.csproj" Id="d1121948-ca52-4c84-8b1d-6e14dabde95b" />
+  <Project Path="ClapStudio.Interface/ClapStudio.Interface.csproj" Id="073ba945-1c43-4afd-af87-6b33faf3830e" />
+  <Project Path="ClapStudio/ClapStudio.csproj" Id="dbde4f0a-fcf5-4b23-b7e5-4826a7555078">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Deploy />
+  </Project>
+</Solution>

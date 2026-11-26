@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ClapStudio (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ClapStudio (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
